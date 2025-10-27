@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#main img {
+  height: 400px;
+  position: relative;
+  z-index: 99;
+  top:6%;
+  object-fit: cover;
+
+}
+#text{
+  position: absolute;
+  width: 50%;
+  font-size: 24px;
+  z-index: 999;
+  text-align: center;
+  top:15%;
+  text-transform: uppercase;
+
+}
+
+#scroll-div{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 100px;
+}
+#scroll-div::-webkit-scrollbar{
+  display: none;
+}
+#scroll-div h1 {
+ display: inline-block;
+ font-size: 130px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ letter-spacing: 3px;
+ margin-right: 30px;
+ animation-name: scroll;
+ animation-duration: 1s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+
+
+#scroll-div2{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 100;
+  margin-bottom: 100px;
+  
+}
+#scroll-div2::-webkit-scrollbar{
+  display: none;
+}
+#scroll-div2 h1 {
+ display: inline-block;
+ font-size: 130px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ letter-spacing: 3px;
+ margin-right: 30px;
+ margin-bottom: 30px;
+ color: transparent;
+ -webkit-text-stroke-width: 2px;
+ -webkit-text-stroke-color: black;
+ animation-name: scroll2;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ animation-direction:initial;
+
+}
+
+#scroll-div3{
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#scroll-div3::-webkit-scrollbar{
+  display: none;
+}
+#scroll-div3 h1 {
+ display: inline-block;
+ font-size: 130px;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+ letter-spacing: 3px;
+ margin-right: 30px;
+margin-bottom: 30px;
+animation-name: scroll;
+ animation-duration: 1s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ animation-direction: reverse;
+} 
+@keyframes scroll {
+  0%{   
+   transform: translateX(calc(-100% - 32px));
+
+  } 
+  100%{
+transform: translateX(0);
+  }
+}
+@keyframes scroll2 {
+  0%{
+    transform: translateX(calc(-100% - 32px));
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

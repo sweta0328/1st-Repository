@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+/*
+#box{height: 100px;
+width: 100px;
+background-color: lightseagreen;
+position: absolute;
+animation-name: ;
+animation-duration: 3s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+animation-iteration-count: 2;
+animation-timing-function: cubic-bezier();
+animation-direction :reverse;
+
+}
+
+@keyframes move{
+  from{
+left: 0;
+top:0;
+  }
+  to{
+left: 60%;
+background-color: rgb(89, 240, 19);
+top: 60%;
+  }
+}
+
+@keyframes anime {
+  0%{
+left: 0;
+background-color: lightseagreen;
+rotate: 0deg;
+  }
+
+50%{
+  left: 55%;
+  background-color: rgb(75, 250, 75);
+  top: 0;
+  rotate: 360deg;
+}
+
+  100%{
+    left: 55%;
+    background-color: salmon;
+    top: 50%;
+    rotate: 360deg;
+  }
+}*/
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  font-size: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  position: relative;
+ 
+}
+h1::after{
+  content: "";
+  position: absolute;
+  height:10px;
+  width:100%;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+h1:hover::after{animation-name: lineanime;
+  animation-duration: 2s;
+ 
+   
+}
+@keyframes lineanime {
+  0%{
+    width:0;
+    left: 0;
+  }
+  50%{
+    width: 100%;
+    left: 0;
+  }
+  100%{
+    width: 0;
+    left: 0;
+  }
+}

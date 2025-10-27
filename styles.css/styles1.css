@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+#left{
+  height: 100%;
+  width: 40%;
+  position: relative;
+  
+}
+#right{
+  width: 60%;
+  height: 100%;
+  background-color:yellow; 
+
+}
+
+#rtop{
+  display: flex;
+height: 50%;
+width: 100%;
+background-color: yellowgreen;
+}
+#rbottom{
+width: 100%;
+height: 50%;
+background-color: blue;
+}
+#rtopleft{
+width: 55%;
+height: 100%;
+background-image:url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FjdHVzfGVufDB8fDB8fHww);
+background-position: bottom;
+background-size: cover;
+
+
+}
+#rtopright{
+  width: 45%;
+  height: 100%;
+background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlfGVufDB8fDB8fHww);
+background-size: cover;
+background-position: center;
+}
+
+#rbottom{
+  background-image: url(https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+#lnav{
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+#lnavr a{
+margin-right: 20px;
+}
+svg{
+  height:20px;
+}
+#lnavr{
+display: flex;
+align-items: center; 
+}
+#lnavr a{
+color: black;
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+}
+
+#lnavr i{
+  color: royalblue;
+  height: 20px;
+}
+#left #text-center{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#text-center h2{
+font-size: 90px;
+font-weight: 900;
+}
+
+#text-center p{
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#text-center a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+@media(max-width: 500px){
+  #main{
+    flex-direction: column;
+  }
+  #main #left{
+    width: 100%;
+  }
+  #main #right{
+    width: 100%;
+  }
+}

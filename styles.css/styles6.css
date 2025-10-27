@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  
+}
+#center{
+  height: 80%;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(0%,-50%); 
+
+}
+.imagecontainer{
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  overflow: hidden;
+}
+img{
+  height: 100%;
+}
+#two{
+  width: 0%;
+}
+#three{
+  width: 0%;
+}
+#one{
+  width: 0%;
+}
+.text{
+  width: 400px;
+  height: 100px;
+  overflow: hidden;
+  bottom: 15%;
+  left: -10%;
+  position: absolute;
+  z-index: 99;
+}
+.text h1{
+  top:100px;
+  position: absolute;
+  font-size: 6vw;
+}
